@@ -8,6 +8,13 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppointmentBooking.Tests", "AppointmentBooking.Tests\AppointmentBooking.Tests.csproj", "{46B2D96A-3D57-4A7C-B9D3-77F52D5B4E94}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{18575EFD-2DFF-4AEF-B3F1-95D6E5360F2E}"
+	ProjectSection(SolutionItems) = preProject
+		TestStrategy.md = TestStrategy.md
+		TestPlan.md = TestPlan.md
+		TestSummaryReport.md = TestSummaryReport.md
+		QualityGovernance.md = QualityGovernance.md
+		ContinuousImprovement.md = ContinuousImprovement.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
