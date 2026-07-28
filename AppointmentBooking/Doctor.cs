@@ -1,5 +1,7 @@
 ﻿public class Doctor
 {
+    public const int MaximumDailyAppointments = 10;
+
     public string Id { get; }
     public string FullName { get; }
     public int AvailableSlots { get; private set; }
@@ -11,6 +13,9 @@
             throw new ArgumentException("Doctor name is required.");
         if (availableSlots < 0)
             throw new ArgumentException("Available slots cannot be negative.");
+        if (availableSlots > MaximumDailyAppointments)
+            throw new ArgumentException(
+                $"A doctor cannot have more than {MaximumDailyAppointments} daily appointments.");
         Id = id;
         FullName = fullName;
         AvailableSlots = availableSlots;

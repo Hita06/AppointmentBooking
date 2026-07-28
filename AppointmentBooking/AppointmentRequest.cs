@@ -19,7 +19,7 @@ namespace ENSE707_AppointmentBooking
             Doctor = doctor ??
                 throw new ArgumentNullException(nameof(doctor));
 
-            if (requestedDate.Date < DateTime.Today)
+            if (requestedDate.Date <= DateTime.Today)
             {
                 throw new ArgumentException(
                     "Requested appointment date cannot be in the past.");
